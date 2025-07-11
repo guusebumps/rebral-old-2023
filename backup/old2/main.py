@@ -2,11 +2,9 @@ from PyQt5 import QtWidgets, uic
 import os
 import mysql.connector
 
-# Caminho base do projeto
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 UI_DIR = os.path.join(BASE_DIR, 'ui')
 
-# Carregar arquivos .ui convertidos para .py
 from ui.ui_tela_unidade import Ui_tela_unidade
 from ui.ui_tela_login import Ui_tela_login
 from ui.ui_tela_botao_lista import Ui_tela_botao_lista
