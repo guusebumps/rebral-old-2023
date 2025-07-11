@@ -1,0 +1,50 @@
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_VideoScreen(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(1223, 839)
+        MainWindow.setMinimumSize(QtCore.QSize(1223, 839))
+        MainWindow.setMaximumSize(QtCore.QSize(1223, 839))
+        MainWindow.setStyleSheet("background-color: rgb(209, 209, 209);")
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.frame = QtWidgets.QFrame(self.centralwidget)
+        self.frame.setGeometry(QtCore.QRect(-51, -20, 1251, 161))
+        self.frame.setStyleSheet("background-color: rgb(80, 80, 80);")
+        self.frame.setFrameShape(QtWidgets.QFrame.Shape.StyledPanel)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Shadow.Raised)
+        self.frame.setObjectName("frame")
+        self.frame_2 = QtWidgets.QFrame(self.centralwidget)
+        self.frame_2.setGeometry(QtCore.QRect(-10, 150, 251, 691))
+        self.frame_2.setStyleSheet("background-color: rgb(80, 80, 80);")
+        self.frame_2.setFrameShape(QtWidgets.QFrame.Shape.StyledPanel)
+        self.frame_2.setFrameShadow(QtWidgets.QFrame.Shadow.Raised)
+        self.frame_2.setObjectName("frame_2")
+        self.label = QtWidgets.QLabel(self.frame_2)
+        self.label.setGeometry(QtCore.QRect(40, 10, 181, 31))
+        font = QtGui.QFont()
+        font.setFamily("Consolas")
+        font.setPointSize(12)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label.setFont(font)
+        self.label.setStyleSheet("color: rgb(255, 255, 255);")
+        self.label.setObjectName("label")
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 1223, 21))
+        self.menubar.setObjectName("menubar")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.label.setText(_translate("MainWindow", "O que deseja fazer?"))

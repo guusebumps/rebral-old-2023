@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RegisterScreen</class>
+ <widget class="QMainWindow" name="RegisterScreen">
+  <property name="windowTitle"><string>Cadastrar Usuário</string></property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLineEdit" name="line_username">
+    <property name="placeholderText"><string>Usuário</string></property>
+    <property name="geometry"><rect><x>100</x><y>30</y><width>200</width><height>30</height></rect></property>
+   </widget>
+   <widget class="QLineEdit" name="line_password">
+    <property name="echoMode">2</property>
+    <property name="placeholderText"><string>Senha</string></property>
+    <property name="geometry"><rect><x>100</x><y>70</y><width>200</width><height>30</height></rect></property>
+   </widget>
+   <widget class="QLineEdit" name="line_confirm_password">
+    <property name="echoMode">2</property>
+    <property name="placeholderText"><string>Confirmar Senha</string></property>
+    <property name="geometry"><rect><x>100</x><y>110</y><width>200</width><height>30</height></rect></property>
+   </widget>
+   <widget class="QComboBox" name="combo_role">
+    <property name="geometry"><rect><x>100</x><y>150</y><width>200</width><height>30</height></rect></property>
+    <item><property name="text"><string>Usuário</string></property></item>
+    <item><property name="text"><string>Administrador</string></property></item>
+   </widget>
+   <widget class="QPushButton" name="btn_register">
+    <property name="text"><string>Cadastrar</string></property>
+    <property name="geometry"><rect><x>150</x><y>190</y><width>100</width><height>30</height></rect></property>
+   </widget>
+   <widget class="QLabel" name="label_status">
+    <property name="geometry"><rect><x>100</x><y>230</y><width>200</width><height>20</height></rect></property>
+    <property name="alignment">AlignCenter</property>
+    <property name="text"><string/></property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
